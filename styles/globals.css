@@ -1,0 +1,371 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div.page1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../public/images/Landws.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  font-family: Montfont;
+  height: 100vh;
+  @apply backdrop-blur-[2px];
+}
+
+.page2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../public/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  font-family: Montfont;
+
+  @apply backdrop-blur-[4px];
+  min-height: 100vh;
+}
+/* .swiper-pagination {
+  display: none;
+} */
+.swiper-button-next {
+  display: none !important;
+}
+@font-face {
+  font-family: montnormal;
+  src: url(./Montserrat-VariableFont_wght.ttf);
+}
+.montnormal {
+  font-family: montnormal;
+}
+.bbb {
+  box-shadow: 2px 3px 17px 14px rgba(0, 0, 0, 0.397);
+  -webkit-box-shadow: 2px 3px 17px 14px rgba(0, 0, 0, 0.397);
+  -moz-box-shadow: 2px 3px 17px 14px rgba(0, 0, 0, 0.397);
+}
+.swiper-button-prev {
+  display: none !important;
+}
+.show::before {
+  content: attr("name of project");
+}
+/* .box-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -100;
+}
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  background-size: contain;
+
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+}
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+  left: 42%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+  left: 15%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 3.5s;
+}
+.box-area li:nth-child(7) {
+  left: 35%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 8.5s;
+}
+.box-area li:nth-child(8) {
+  left: 85%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 1.5s;
+}
+.box-area li:nth-child(9) {
+  left: 5%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 0.5s;
+}
+.box-area li:nth-child(10) {
+  left: 55%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 18.5s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+} */
+
+@keyframes bg {
+  0% {
+    transform: rotate(0);
+    top: 0;
+  }
+  25% {
+    transform: rotate(8%);
+  }
+  50% {
+    transform: rotate(0deg);
+    top: -10%;
+  }
+  75% {
+    transform: rotate(-8%);
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0%;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  z-index: 1000 !important;
+  background-color: #161f36;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+  z-index: 1000 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(174, 165, 209, 0.452);
+  border-radius: 10px;
+  z-index: 1000 !important;
+}
+/*
+@keyframes bg {
+  0% {
+    top: 0;
+    left: 0;
+    transform: rotate(60deg);
+  }
+  30% {
+    top: 10%;
+    left: 0;
+  }
+  50% {
+    top: -10%;
+    left: -20%;
+    transform: rotate3d(30deg);
+  }
+  70% {
+    top: 10%;
+    left: 0;
+    transform: rotate3d(30deg);
+  }
+  100% {
+    top: 0;
+    left: 5%;
+    transform: rotate3d(60deg);
+  }
+} */
+@font-face {
+  font-family: Montfont;
+  src: url(./Montserrat-Black.otf);
+}
+.wallet-adapter-button-trigger {
+  background-color: #522da800 !important;
+  font-size: 14px !important;
+  padding: 0;
+  width: 160px;
+}
+:root {
+  --dark-color: #0c1226;
+  --light-color: #141a31;
+  --alternative-color: #4e537d;
+}
+
+.item-container:hover {
+  background-color: var(--dark-color) !important;
+}
+.fontsans {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+}
+#scro::-webkit-scrollbar {
+  width: 0px;
+  z-index: 1000 !important;
+  background-color: transparent;
+}
+
+/* Track */
+#scro::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+  z-index: 1000 !important;
+}
+
+/* Handle */
+#scro::-webkit-scrollbar-thumb {
+  background: rgba(174, 165, 209, 0.452);
+  border-radius: 10px;
+  z-index: 1000 !important;
+}
+#tp::-webkit-scrollbar {
+  width: 4px;
+  background: rgba(174, 165, 209, 0.452);
+  z-index: 1000 !important;
+  background-color: transparent;
+}
+
+/* Track */
+#tp::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+  z-index: 1000 !important;
+}
+
+/* Handle */
+#tp::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  z-index: 1000 !important;
+}
+.shad {
+  /* Add a shadow effect using box-shadow */
+  box-shadow: 0 0 8px 5px #161f36;
+
+  /* Add a faded border using border */
+  /* border: 2px solid #161f36; */
+}
+.gr {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 20px;
+}
+#profile::-webkit-scrollbar {
+  width: 3px;
+  z-index: 1000 !important;
+  background-color: #7a89af;
+}
+
+/* Track */
+#profile::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+  z-index: 1000 !important;
+}
+
+/* Handle */
+#profile::-webkit-scrollbar-thumb {
+  background: rgba(174, 165, 209, 0.452);
+  border-radius: 10px;
+  z-index: 1000 !important;
+}
+
+.wallet-adapter-button {
+  padding: 0 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.726) !important;
+}
+#sel::-webkit-scrollbar {
+  width: 4px;
+  z-index: 1000 !important;
+  background-color: transparent;
+}
+
+/* Track */
+#sel::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+  z-index: 1000 !important;
+  background-color: transparent;
+}
+
+/* Handle */
+#sel::-webkit-scrollbar-thumb {
+  background: rgba(174, 165, 209, 0.452);
+  border-radius: 10px;
+  z-index: 1000 !important;
+}
+
+.selectionn {
+  box-shadow: 7px 0px 50px 0px #ffa800;
+  -webkit-box-shadow: 7px 0px 50px 0px #ffa800;
+  -moz-box-shadow: 7px 0px 50px 0px #ffa800;
+}
+.gold {
+  /* font-size: 5vw; */
+  /* text-transform: uppercase; */
+  line-height: 1;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(186, 148, 62, 1) 0%,
+    rgba(236, 172, 32, 1) 20%,
+    rgba(186, 148, 62, 1) 39%,
+    rgba(249, 244, 180, 1) 50%,
+    rgba(186, 148, 62, 1) 60%,
+    rgba(236, 172, 32, 1) 80%,
+    rgba(186, 148, 62, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite;
+  background-size: 200%;
+  background-position: left;
+  /* text-shadow: #fc0 1px 0 10px; */
+}
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+.t {
+  text-shadow: #fc0 1px 0 10px;
+}
