@@ -20,6 +20,8 @@ import { getRemainingAccountsByGuardType, mintV2Instruction, get_token_account }
 import { fromTxError } from "@/utils/errors";
 import { CountdownTimer } from "../components/Counter/Counter";
 import background from "../public/images/Landws.jpg";
+import { styled } from "styled-components";
+
 export default function Home() {
   const wallet = useWallet();
   const { publicKey } = wallet;
@@ -305,17 +307,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/LOGO.ico" />
       </Head>
-      {/* 
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../public/images/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top;
-  font-family: Montfont;
-  @apply backdrop-blur-[4px];
-  min-height: 100vh; */}
-      <div className={` page1 backdrop-blur-[4px]`}></div>
-      <div className="  min-h-[80vh] absolute top-20 left-40 xl:container w- mx-auto grid place-items-center ">
+
+      <div className=" min-h-[80vh] xl:container mx-auto grid place-items-center ">
         <ToastContainer theme="dark" />
         <div className="w-full max-w-[1600px] md:-mt-[14%] flex md:justify-around flex-col md:flex-row items-center justify-center">
           <div className="w-[90%] sm:w-auto">

@@ -4,7 +4,7 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 const Nav = () => {
   return (
-    <div className=" w-full absolute top-0 left-0 md:px-[3.8%] mx-auto z-[100]">
+    <div className=" w-full  top-0 left-0 md:px-[3.8%] mx-auto z-[100]">
       <div className="flex items-center justify-between py-4 md:px-10 px-1">
         <div
           className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 

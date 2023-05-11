@@ -306,8 +306,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/LOGO.ico" />
       </Head>
-      <div className="page2  "></div>
-      <div className="absolute top-20 left-40 min-h-[80vh] xl:container w- mx-auto grid place-items-center">
+      <div className="min-h-[80vh] xl:container w- mx-auto grid place-items-center">
         <ToastContainer theme="dark" />
         <div className="w-full max-w-[1600px] md:-mt-[14%] flex md:justify-around flex-col md:flex-row items-center justify-center">
           <div className="w-[90%] sm:w-auto">
