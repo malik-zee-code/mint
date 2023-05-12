@@ -322,8 +322,8 @@ export default function Home() {
                 <div className="flex font-semibold text-[14px] w-[260px] mx-auto justify-between items-center">
                   <div>Supply</div>
                   <div>
-                    {`${candyMachine ? Number(candyMachine.itemsMinted) : "Loading.."}`}
-                    /1111
+                    {`${candyMachine ? Number(candyMachine.itemsMinted) : "0.."}`}
+                    /5550
                   </div>
                 </div>
                 {candyMachine && (
